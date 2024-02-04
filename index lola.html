@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.10.1/simple-lightbox.min.css" />
+  <title>Coldplay</title>
+</head>
+
+<body>
+  <button id="theme">Dark mode</button>
+  <div class="message-error">
+    <ul></ul>
+  </div>
+  <div class="message-success">
+    <h1>Votre formulaire a bien été envoyé</h1>
+  </div>
+  <form id="formulaire" novalidate>
+    <div>
+      <label for="nom">Nom</label>
+      <input type="text" name="nom" id="nom" />
+    </div>
+    <div>
+      <label for="pseudo">Prénom</label>
+      <input type="text" name="pseudo" id="pseudo" />
+    </div>
+    <div>
+      <label for="email">Email</label>
+      <input type="email" name="email" id="email" />
+    </div>
+    <div>
+      <label for="radios">Casual Fan :
+        <input type="radio" name="radios" id="radio1" value="radio1" /></label>
+      <label for="radio1">Regular fan :
+        <input type="radio" name="radios" id="radio2" value="radio2" /></label>
+      <label for="radio2">True Fan :
+        <input type="radio" name="radios" id="radio3" value="radio3" /></label>
+    </div>
+    <div>
+      <label for="axe"> Albums :</label>
+      <select name="axe" id="axe">
+        <option value="album1">Parachutes</option>
+        <option value="album2">A Rush of Blood to the the Head</option>
+        <option value="album3">X&Y</option>
+        <option value="album4">Viva la Vida or Death and All His Friends</option>
+        <option value="album">Mylo Xyloto</option>
+        <option value="album6">Ghost Stories</option>
+        <option value="album7">A Head Full of Dreams</option>
+        <option value="album8">Everyday Life</option>
+        <option value="album9">Music of the Spheres</option>
+      </select>
+    </div>
+
+    <button type="submit">S'inscrire</button>
+  </form>
+  <br />
+  <div class="swipper mon-slider" id="mon-slider">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="Coldplay.histoire.jpg" alt="Histoire" />
+      </div>
+      <div class="swiper-slide">
+        <img src="Coldplay.albums.jpg" alt="Discographie" />
+      </div>
+
+      <div class="swiper-slide">
+        <img src="Coldplay.actus" alt="Actualités" />
+      </div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+  </div>
+
+  <br />
+  <br />
+  <br />
+
+  <main class="infos Coldplay">
+    <div class="filters">
+      <ul>
+        <li data-filter="all" class="active">Infos Coldplay</li>
+        <li data-filter="his">Histoire du groupe</li>
+        <li data-filter="alb">Tous les albums</li>
+        <li data-filter="act">Actualités du groupe</li>
+        <li data-filter="comp">Comptes officiels</li>
+        <li data-filter="ec">Espace commantaires</li>
+      </ul>
+    </div>
+    <div class="infos">
+      <div class="card filtr-item" data-category="his">
+        <div class="card-header">
+          <p class="card-title">Histoire du groupe</p>
+          <div class="card-axe">Biographie</div>
+        </div>
+        <a href="Coldplay.histoire.jpg"><img src="Coldplay.histoire.jpg" alt="Showreel" />
+        </a>
+      </div>
+      <div class="card filtr-item" data-category="alb">
+        <div class="card-header">
+          <p class="card-title">Discographie</p>
+          <div class="card-axe">Tous leurs albums</div>
+        </div>
+        <a href="Coldplay.albums.jpg"><img src="Colplay.albums.jpg" alt="Showreel" /> </a>
+      </div>
+      <div class="card filtr-item" data-category="act">
+        <div class="card-header">
+          <p class="card-title">Actualités du groupes</p>
+          <div class="card-axe">Découvrer les actualités du groupe</div>
+        </div>
+        <a href="Colplay.actus.jpg"><img src="Colplay.actus.jpg"
+            alt="Showreel" />
+        </a>
+      </div>
+      <div class="card filtr-item" data-category="comp">
+        <div class="card-header">
+          <p class="card-title">Comptes officiels</p>
+          <div class="card-axe">Tous leurs réseaux sociaux</div>
+        </div>
+        
+      </div>
+      <div class="card filtr-item" data-category="ec">
+        <div class="card-header">
+          <p class="card-title">Espace commantaires</p>
+          <div class="card-axe">Espaces commantaires</div>
+        </div>
+        
+        </a>
+      </div>
+    </div>
+  </main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/filterizr/2.2.4/vanilla.filterizr.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.10.1/simplelightbox.min.js"></script>
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
